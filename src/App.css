@@ -1,5 +1,5 @@
 .App {
-  text-align: center;
+  text-align: left;
 }
 
 .App-logo {
@@ -35,4 +35,391 @@
   to {
     transform: rotate(360deg);
   }
+}
+.error {
+  color: red;
+  box-sizing: content-box;
+  list-style-type: "* ";
+}
+.user {
+  color: black;
+  font-weight: bolder;
+  font-size: 40px;
+  display: flex;
+  margin-top: 30px;
+  padding-left: 10%;
+  padding-top: 10px;
+}
+
+.list {
+  background: rgb(245, 241, 241);
+}
+
+.tableuser {
+  padding-top: 20px;
+  table-layout: auto;
+  width: 50%;
+  padding-left: 80px;
+  text-align: center;
+}
+
+.th_user {
+  font-size: 30px;
+  background-color: rgb(10, 112, 228);
+  color: rgb(251, 251, 251);
+  height: 40px;
+}
+
+.delete {
+  background-color: #ddd;
+  color: black;
+  font-size: 10px;
+  height: 25px;
+  width: 90px;
+  border-radius: 4px;
+  display: relative;
+  /* box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
+    0 17px 50px 0 rgba(0, 0, 0, 0.19); */
+}
+.delete_disabled {
+  background-color: rgb(253, 251, 251);
+  color: rgb(47, 44, 44);
+  font-size: 10px;
+  height: 25px;
+  width: 90px;
+  border-radius: 4px;
+  display: relative;
+}
+.delete:hover {
+  background-color: rgb(240, 60, 15);
+  color: rgb(216, 210, 210);
+  font-size: 13px;
+  height: 25px;
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
+    0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
+.Search {
+  padding-left: 40%;
+  padding-top: 30px;
+}
+.header {
+  background-color: rgb(4, 5, 8);
+  height: 50px;
+}
+
+.login {
+  border: 1px solid rgb(179, 175, 175);
+  width: 350px;
+  box-shadow: 10px 10px 8px #96999b;
+  height: fit-content;
+  margin-top: 120px;
+  margin-left: 25%;
+  padding-left: 20px;
+  background-color: white;
+}
+
+.loginpage {
+  background-color: rgb(236, 232, 232);
+  width: 100%;
+  height: 900px;
+  display: flex;
+}
+
+.login-head {
+  padding: 13px;
+
+  background-color: white;
+  color: rgb(0, 0, 0);
+  font-size: 25px;
+  font-weight: bold;
+  text-align: center;
+}
+.label {
+  font-size: 15px;
+  font-weight: bold;
+}
+.input {
+  width: 300px;
+  height: 30px;
+  color: grey;
+}
+
+.login_button {
+  background-color: rgb(58, 192, 76);
+  width: 88%;
+  height: 30px;
+  align-self: center;
+}
+.login_button:hover {
+  background-color: rgb(71, 238, 94);
+  width: 88%;
+  height: 30px;
+  align-self: center;
+}
+
+.link {
+  text-decoration: none;
+  font-size: 15px;
+}
+.register {
+  border: 4px solid black;
+  width: 40%;
+  height: fit-content;
+  padding-left: 30px;
+  margin-top: 20px;
+  margin-left: 25%;
+}
+
+.test {
+  display: inline-block;
+}
+
+.td_delete {
+  text-align: left;
+  padding-left: 10px;
+}
+
+/* .taskcolumn {
+  background-color: black;
+  color: aqua;
+} */
+
+.left {
+  height: 50%;
+  width: 20%;
+  box-shadow: 10px 10px 8px #888888;
+  position: fixed;
+  z-index: 1;
+  margin: 20px;
+  margin-left: 0px;
+  background: rgb(236, 235, 234);
+  overflow: auto;
+  /* float: left; */
+}
+
+.right {
+  margin: 20px;
+  margin-right: 0px;
+  background: white;
+  overflow: auto;
+  float: right;
+  width: 20%;
+  height: 100%;
+}
+
+.pagination {
+  list-style: none;
+  display: inline-flex;
+  margin-left: 50px;
+}
+.pagination a {
+  color: rgb(3, 3, 3);
+  float: right;
+  padding: 10px 10px;
+  transition: background-color 0.3s;
+  border: 1px solid rgb(7, 7, 7);
+  text-decoration: none;
+  font-size: 13px;
+}
+.active {
+  background-color: #2478c7;
+  color: white;
+}
+.pagination a:hover:not(.active) {
+  background-color: #ddd;
+}
+
+.tttable {
+  table-layout: fixed;
+  border-collapse: collapse;
+  border-style: dotted;
+  width: 50%;
+  margin-left: 40px;
+  border: 3px solid rgb(2, 1, 1);
+}
+.tthead {
+  border: 3px solid rgb(2, 1, 1);
+}
+.tthead_th {
+  text-align: center;
+  background-color: grey;
+}
+
+.ttrow {
+  height: max-content;
+  width: fit-content;
+}
+
+.ttdata {
+  color: rgb(6, 7, 7);
+  border: 1px solid rgb(2, 1, 1);
+  width: fit-content;
+}
+.ttdata:hover {
+  color: rgb(67, 141, 141);
+  border: 1px solid rgb(2, 1, 1);
+  width: fit-content;
+}
+
+.tttable ul {
+  list-style-type: none;
+}
+.tt_title {
+  font-weight: bolder;
+  text-decoration: none;
+  color: black;
+}
+
+.nav {
+  display: flex;
+  background-color: rgb(46, 45, 45);
+  color: white;
+  height: 80px;
+  box-shadow: 10px 10px 8px #dad4d4;
+}
+
+.navlogout {
+  padding-top: 20px;
+  text-decoration: none;
+  position: absolute;
+  right: 0px;
+  width: 100px;
+  color: rgb(255, 255, 255);
+}
+.navlogout:hover {
+  padding-top: 20px;
+  text-decoration: none;
+  position: absolute;
+  right: 0px;
+  font-weight: 700;
+  width: 100px;
+  color: rgb(255, 255, 255);
+}
+
+.leftnav {
+  height: 700px;
+  width: 250px;
+  box-shadow: 10px 10px 8px #221f1f;
+  float: left;
+  margin: 10px;
+  margin-left: 2px;
+  background-color: rgb(229, 226, 226);
+  overflow: auto;
+  position: relative;
+  display: inline;
+}
+.leftnav_a {
+  width: 250px;
+  height: 50px;
+  text-decoration: none;
+  float: right;
+  text-align: right;
+  padding-right: 20px;
+  padding-top: 20px;
+  font-weight: 500;
+  color: rgb(36, 35, 35);
+}
+.leftnav_a:hover {
+  background-color: rgb(177, 172, 169);
+  color: rgb(236, 222, 222);
+  font-weight: 700;
+}
+
+.currentuser {
+  background-color: rgb(219, 217, 214);
+  border: 1px solid black;
+  width: 110px;
+  height: 250px;
+  float: center;
+  text-align: center;
+  padding-top: 30px;
+  display: flex;
+}
+
+.piechart {
+  background-color: white;
+  height: 40px;
+  padding-top: 10px;
+  padding-left: 20px;
+  /* width: max-content; */
+  width: 1000px;
+  display: inline;
+}
+
+.todaystask {
+  margin: 20px;
+  display: flex;
+  height: 270px;
+}
+
+.userhome {
+  width: fit-content;
+  height: fit-content;
+}
+
+.navadduser {
+  padding-top: 20px;
+  text-decoration: none;
+  position: absolute;
+  right: 130px;
+  width: 100px;
+  color: rgb(255, 255, 255);
+}
+
+.tabletask {
+  position: relative;
+  padding-top: 30px;
+  width: 80%;
+  table-layout: auto;
+  padding-left: 80px;
+  text-align: center;
+}
+.searchtask {
+  margin-left: 20%;
+}
+
+.addtask {
+  font-size: 10px;
+  height: 25px;
+  width: 90px;
+  display: inline-flex;
+  /* margin-left: -20px; */
+}
+.addtask:hover {
+  background-color: #ddd;
+}
+
+.taskrow {
+  background-color: rgb(253, 253, 252);
+  height: 30px;
+}
+
+.taskhead {
+  background-color: rgb(49, 138, 255);
+  height: 40px;
+  width: 80px;
+  color: white;
+  font-size: 20px;
+  font-weight: bolder;
+}
+
+.updatestatus {
+  color: rgb(3, 3, 3);
+  width: 90px;
+  background-color: #ddd;
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
+    0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+.updatestatus:hover {
+  color: rgb(2, 1, 1);
+  width: 90px;
+  background-color: white;
+}
+.td_updatestatus {
+  background-color: white;
+}
+
+.task_duedate {
+  width: 100px;
 }
