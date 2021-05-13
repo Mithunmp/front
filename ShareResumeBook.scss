@@ -1,0 +1,66 @@
+.book-share {
+    &-filter {
+        .company-filter-container {
+            &-search {
+                width: 300px;
+            }
+            &-filters {
+                display: inline-block;
+                width: 100%;
+                border: 1px solid #dad5d5;
+                border-radius: 3px;
+                margin-top: 10px;
+                margin-bottom: 10px;
+                .industry-filter {
+                    display: inline-block;
+                    border-right: 1px solid #dad5d5;
+                }
+                .location-filter {
+                    display: inline-block;
+                    border-right: 1px solid #dad5d5;
+                }
+                .tags-filter {
+                    display: inline-block;
+                }
+            }
+        }
+    }
+    &-filterbar {
+    }
+    &-selectionbar {
+        margin-bottom: 30px;
+        .select-company {
+            &-pagination {
+                .total-results {
+                    margin-right: 3px;
+                }
+                .page-number {
+                    margin-left: 3px;
+                    margin-right: 3px;
+                }
+            }
+        }
+    }
+    &-company {
+        .company-list-container {
+            height: 200px;
+            overflow-y: auto;
+            .company {
+                height: 65px;
+                border-bottom: 1px solid rgb(238, 238, 238);
+                border-top: 1px solid rgb(238, 238, 238);
+                &-checkbox {
+                    margin-left: 10px;
+                    top: 20px;
+                }
+                &-image {
+                    margin-left: 10px;
+                    top: 10px;
+                }
+                &-name {
+                    top: 20px;
+                }
+            }
+        }
+    }
+}
