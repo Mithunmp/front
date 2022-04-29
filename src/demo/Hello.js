@@ -7,7 +7,4 @@ const Hello = (props) => {
     {console.log('demo')}
     </div>)
 }
-
-
-
 export default Hello
